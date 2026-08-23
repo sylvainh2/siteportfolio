@@ -250,7 +250,7 @@ const Home = ()=> {
                     <h3>Ce site &amp; mon CV</h3>
                     <p>Le portfolio que vous consultez, et mon CV complet au format PDF, téléchargeable directement.</p>
                     <div className="project-links">
-                        {/*<a href="https://sylvainh2.github.io/portfolio" target="_blank" rel="noopener">Ancien portfolio ↗</a>*/}
+                        <a href="https://github.com/sylvainh2/siteportfolio" target="_blank" rel="noopener">Portfolio ↗</a>
                         <a href="CV_Sylvain_Crouzier.pdf" target="_blank" rel="noopener">Télécharger le CV ↗</a>
                     </div>
                     </div>
@@ -323,7 +323,7 @@ const Home = ()=> {
                     </div>
                     <div className="contact-card">
                     <div className="contact-row"><span>email</span><a href="mailto:sylvain.crouzier@free.fr">sylvain.crouzier@free.fr</a></div>
-                    <div className="contact-row"><span>téléphone</span><a href="tel:+33608732296">06 08 73 22 96</a></div>
+                    <div className="contact-row"><span>téléphone</span><span>06 08 73 22 96</span></div>
                     <div className="contact-row"><span>localisation</span><span>Bordeaux, France</span></div>
                     <div className="contact-row"><span>linkedin</span><a href="https://www.linkedin.com/in/sylvain-crouzier-64017780/" target="_blank" rel="noopener">sylvain-crouzier</a></div>
                     <div className="contact-row"><span>github</span><a href="https://github.com/sylvainh2" target="_blank" rel="noopener">sylvainh2</a></div>
