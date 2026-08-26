@@ -1,0 +1,60 @@
+/**************************************************************************************************/
+/*                                              Contact                                            /
+/**************************************************************************************************/
+
+.mail{
+  position:relative;
+  background-color: #11171F;
+  border-radius: 8px;
+  border:1px solid #202830;
+  margin:1rem auto;
+  width: 60%;
+}
+.mailForm{
+  margin:1rem auto;
+  display:flex;
+  flex-direction: column;
+  width:90%;
+}
+.inputMail{
+  margin-top:1rem;
+  font-size:1.2vw;
+}
+.mailBtn{
+  border: 1px solid #202830;
+  border-radius: 3px;
+  background-color: #090D13;
+  color:#63F0B0;
+  margin:1rem auto;
+  display:block;
+  padding:0.2rem 0.5rem 0.2rem 0.5rem;
+}
+.mailBtn:hover{
+  background-color: #63F0B0;
+  color:#090D13
+}
+.mailEffect{
+  // box-shadow: 2px 2px 3px rgb(58, 58, 58);
+  border:1px solid #202830;
+  background-color: #11171F;
+  color:#63F0B0;
+}
+.areaEffect{
+  resize:none;
+}
+.wHidden{
+  display:none;
+}
+.sendWindow{
+  z-index: 1;
+  background-color: red;
+  color: white;
+  font-size:1.2vw;
+  padding: 1vw 2vh;
+  transform: translate(-50%,-50%);
+}
+.absCont{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+}

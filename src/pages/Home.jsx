@@ -1,5 +1,5 @@
-import '../assets/css/style.css';
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 const Home = ()=> {
     useEffect(()=>{
@@ -12,9 +12,9 @@ const Home = ()=> {
   // Boot sequence typing effect
   const lines = [
     { text: '&gt; init carrière.log', delay: 0 },
-    { text: '&gt; 1987 :: 15 ans, prof d\'info bénévole (Domont)', delay: 550 },
-    { text: '&gt; 1990–1997 :: Basic, 6502, 68000 — démos Atari ST', delay: 1050 },
-    { text: '&gt; 1997–2022 :: 25 ans de précision artisanale', delay: 1650 },
+    { text: '&gt; 1981–1995 :: Basic, 6502, 68000 — démos Atari ST', delay: 550 },
+    { text: '&gt; 1987 :: 16 ans, prof d\'info bénévole (Domont)', delay: 1050 },
+    { text: '&gt; 1992–2022 :: 30 ans de précision artisanale', delay: 1650 },
     { text: '&gt; 2023 :: reconversion développeur web', delay: 2250 },
     { text: '&gt; 2026 :: <span style="color:var(--text)">prêt pour vos projets</span>', delay: 2850 }
   ];
@@ -201,18 +201,18 @@ const Home = ()=> {
                         publications de photos, commentaires et réactions, API REST sécurisée par token, système de
                         paiement et gestion de publications croisées ajoutés en 2026.</p>
                     <div className="project-links">
-                        {/*<a href="#" target="_blank" rel="noopener">Voir le site ↗</a>
-                        <a href="https://github.com/sylvainh2" target="_blank" rel="noopener">Code source ↗</a>*/}
+                        {/*<a href="#" target="_blank" rel="noreferrer">Voir le site ↗</a>
+                        <a href="https://github.com/sylvainh2" target="_blank" rel="noreferrer">Code source ↗</a>*/}
                     </div>
                     </div>
 
                     <div className="project-card">
                     <div className="p-tag">Jeu web · 2023</div>
                     <h3>Space Invaders</h3>
-                    <p>Clone du classNameique en JavaScript, gestion des sprites, collisions et animations en front pur.</p>
+                    <p>Clone du classique en JavaScript, gestion des sprites, collisions et animations en front pur.</p>
                     <div className="project-links">
-                        <a href="#" target="_blank" rel="noopener">Démo ↗</a>
-                        <a href="https://github.com/sylvainh2/portfolio/tree/main/src/pages/Space.jsx" target="_blank" rel="noopener">Code ↗</a>
+                        <Link to="/Space" rel="noreferrer">Démo ↗</Link>
+                        <a href="https://github.com/sylvainh2/portfolio/tree/main/src/pages/Space.jsx" target="_blank" rel="noreferrer">Code ↗</a>
                     </div>
                     </div>
 
@@ -221,8 +221,8 @@ const Home = ()=> {
                     <h3>Memory</h3>
                     <p>Jeu de mémoire avec gestion d'état, animations et objets en front, en JavaScript/React.</p>
                     <div className="project-links">
-                        <a href="#" target="_blank" rel="noopener">Démo ↗</a>
-                        <a href="https://github.com/sylvainh2/portfolio/tree/main/src/pages/Memory.jsx" target="_blank" rel="noopener">Code ↗</a>
+                        <Link to="Memory" rel="noreferrer">Démo ↗</Link>
+                        <a href="https://github.com/sylvainh2/portfolio/tree/main/src/pages/Memory.jsx" target="_blank" rel="noreferrer">Code ↗</a>
                     </div>
                     </div>
 
@@ -231,8 +231,8 @@ const Home = ()=> {
                     <h3>Morpion</h3>
                     <p>Tic-tac-toe interactif, logique de jeu et détection de victoire codées en JavaScript.</p>
                     <div className="project-links">
-                        <a href="#" target="_blank" rel="noopener">Démo ↗</a>
-                        <a href="https://github.com/sylvainh2/portfolio/tree/main/src/pages/Morpion.jsx" target="_blank" rel="noopener">Code ↗</a>
+                        <Link to="Morpion" rel="noreferrer">Démo ↗</Link>
+                        <a href="https://github.com/sylvainh2/portfolio/tree/main/src/pages/Morpion.jsx" target="_blank" rel="noreferrer">Code ↗</a>
                     </div>
                     </div>
 
@@ -241,17 +241,26 @@ const Home = ()=> {
                     <h3>100 katas d'algorithmique</h3>
                     <p>Une centaine de problèmes d'algorithmique résolus en JavaScript sur Coddy.</p>
                     <div className="project-links">
-                        <a href="https://github.com/sylvainh2/kata" target="_blank" rel="noopener">Code ↗</a>
+                        <a href="https://github.com/sylvainh2/kata" target="_blank" rel="noreferrer">Code ↗</a>
                     </div>
                     </div>
 
                     <div className="project-card">
-                    <div className="p-tag">CV &amp; portfolio</div>
-                    <h3>Ce site &amp; mon CV</h3>
-                    <p>Le portfolio que vous consultez, et mon CV complet au format PDF, téléchargeable directement.</p>
+                    <div className="p-tag">CV · 2025</div>
+                    <h3>CV ancien & nouveau</h3>
+                    <p>Un ancien CV entièrement en HTML-CSS, et mon dernier CV en PDF, téléchargeable directement.</p>
                     <div className="project-links">
-                        <a href="https://github.com/sylvainh2/siteportfolio" target="_blank" rel="noopener">Portfolio ↗</a>
-                        <a href="CV_Sylvain_Crouzier.pdf" target="_blank" rel="noopener">Télécharger le CV ↗</a>
+                        <Link to="/Cv" rel="noreferrer">Ancien CV ↗</Link>
+                        <a href="CV_Sylvain_Crouzier.pdf" target="_blank" rel="noreferrer">Télécharger le CV ↗</a>
+                    </div>
+                    </div>
+
+                    <div className="project-card">
+                    <div className="p-tag">Portfolio</div>
+                    <h3>Ce site</h3>
+                    <p>Le portfolio que vous consultez.</p>
+                    <div className="project-links">
+                        <a href="https://github.com/sylvainh2/siteportfolio" target="_blank" rel="noreferrer">Portfolio ↗</a>
                     </div>
                     </div>
 
@@ -304,7 +313,7 @@ const Home = ()=> {
                     <div className="t-item">
                     <div className="t-date">1987–1988</div>
                     <div className="t-body"><h3>Professeur d'informatique — Club informatique de Domont (95)</h3>
-                        <p>À 15 ans, initiation d'autres jeunes au Basic et à l'assembleur.</p></div>
+                        <p>À 16 ans, initiation d'autres jeunes au Basic et à l'assembleur.</p></div>
                     </div>
                 </div>
                 </div>
@@ -322,12 +331,12 @@ const Home = ()=> {
                         que sur place. Écrivez-moi ou appelez directement — je réponds rapidement.</p>
                     </div>
                     <div className="contact-card">
-                    <div className="contact-row"><span>email</span><a href="mailto:sylvain.crouzier@free.fr">sylvain.crouzier@free.fr</a></div>
+                    <div className="contact-row"><span>email</span><Link to="/Mail">sylvain.crouzier@free.fr</Link></div>
                     <div className="contact-row"><span>téléphone</span><span>06 08 73 22 96</span></div>
                     <div className="contact-row"><span>localisation</span><span>Bordeaux, France</span></div>
-                    <div className="contact-row"><span>linkedin</span><a href="https://www.linkedin.com/in/sylvain-crouzier-64017780/" target="_blank" rel="noopener">sylvain-crouzier</a></div>
-                    <div className="contact-row"><span>github</span><a href="https://github.com/sylvainh2" target="_blank" rel="noopener">sylvainh2</a></div>
-                    <div className="contact-row"><span>cv</span><a href="CV_Sylvain_Crouzier.pdf" target="_blank" rel="noopener">télécharger (pdf)</a></div>
+                    <div className="contact-row"><span>linkedin</span><a href="https://www.linkedin.com/in/sylvain-crouzier-64017780/" target="_blank" rel="noreferrer">sylvain-crouzier</a></div>
+                    <div className="contact-row"><span>github</span><a href="https://github.com/sylvainh2" target="_blank" rel="noreferrer">sylvainh2</a></div>
+                    <div className="contact-row"><span>cv</span><a href="CV_Sylvain_Crouzier.pdf" target="_blank" rel="noreferrer">télécharger (pdf)</a></div>
                     </div>
                 </div>
                 </div>
